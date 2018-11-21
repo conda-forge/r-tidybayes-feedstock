@@ -14,9 +14,8 @@ Summary: Compose data for and extract, manipulate, and visualize posterior draws
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-tidybayes-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-tidybayes-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-tidybayes-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-tidybayes-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-tidybayes-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-tidybayes-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-tidybayes-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-tidybayes-feedstock)
 
 Current release info
 ====================

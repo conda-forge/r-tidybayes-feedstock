@@ -14,9 +14,9 @@ source:
   sha256: 76df435e5ec614097f0345164300c6da682d1fca091f7b1763da930800902219
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 0
-  skip: true  # [win32]
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
@@ -83,8 +83,7 @@ about:
     points with multiple uncertainty intervals, eye plots (intervals plus densities),
     and fit curves with multiple, arbitrary uncertainty bands.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
