@@ -1,4 +1,4 @@
-{% set version = '1.0.4' %}
+{% set version = '1.1.0' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidybayes_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidybayes/tidybayes_{{ version }}.tar.gz
-  sha256: aa9e7ff8af5f2050d18a4c1e0c6ccdf6edadd9073ec020b37e65a01935ccc4b1
+  sha256: a77ddfaec9c47e564bfc8a5a79a6414037044a74d58d696be3195f63327e06d7
 
 build:
   merge_build_host: True  # [win]
@@ -26,7 +26,6 @@ requirements:
   host:
     - r-base
     - r-hdinterval
-    - r-laplacesdemon
     - r-arrayhelpers
     - r-coda
     - r-dplyr >=0.8.0
@@ -37,14 +36,12 @@ requirements:
     - r-plyr
     - r-purrr >=0.2.3
     - r-rlang >=0.3.0
-    - r-stringi
     - r-tibble
     - r-tidyr
     - r-tidyselect
   run:
     - r-base
     - r-hdinterval
-    - r-laplacesdemon
     - r-arrayhelpers
     - r-coda
     - r-dplyr >=0.8.0
@@ -55,7 +52,6 @@ requirements:
     - r-plyr
     - r-purrr >=0.2.3
     - r-rlang >=0.3.0
-    - r-stringi
     - r-tibble
     - r-tidyr
     - r-tidyselect
@@ -84,14 +80,14 @@ extra:
 
 # Package: tidybayes
 # Title: Tidy Data and 'Geoms' for Bayesian Models
-# Version: 1.0.4
-# Date: 2019-02-18
+# Version: 1.1.0
+# Date: 2019-06-02
 # Authors@R: c( person("Matthew", "Kay", role = c("aut", "cre"), email = "mjskay@umich.edu"), person("Timothy", "Mastny", role = "ctb", email = "tim.mastny@gmail.com") )
 # Maintainer: Matthew Kay <mjskay@umich.edu>
 # Description: Compose data for and extract, manipulate, and visualize posterior draws from Bayesian models ('JAGS', 'Stan', 'rstanarm', 'brms', 'MCMCglmm', 'coda', ...) in a tidy data format. Functions are provided to help extract tidy data frames of draws from Bayesian models and that generate point summaries and intervals in a tidy format. In addition, 'ggplot2' 'geoms' and 'stats' are provided for common visualization primitives like points with multiple uncertainty intervals, eye plots (intervals plus densities), and fit curves with multiple, arbitrary uncertainty bands.
-# Depends: R (>= 2.10)
-# Imports: plyr, dplyr (>= 0.8.0), tidyr, ggplot2 (>= 3.0.0), stringi, LaplacesDemon, coda, purrr (>= 0.2.3), rlang (>= 0.3.0), ggstance, grid, forcats, HDInterval, arrayhelpers, tidyselect, tibble, magrittr
-# Suggests: knitr, testthat, vdiffr (>= 0.3.0), svglite, rstan (>= 2.17.0), runjags, rjags, jagsUI, rstanarm (>= 2.17.2), emmeans, broom (>= 0.4.3), dotwhisker, MCMCglmm, bayesplot, modelr, brms (>= 2.4.3), cowplot, ggridges, covr, gdtools, rmarkdown, ggrepel, bindrcpp, RColorBrewer, gganimate, gifski, png, transformr
+# Depends: R (>= 3.5.0)
+# Imports: plyr, dplyr (>= 0.8.0), tidyr, ggplot2 (>= 3.0.0), coda, purrr (>= 0.2.3), rlang (>= 0.3.0), ggstance, grid, forcats, HDInterval, arrayhelpers, tidyselect, tibble, magrittr
+# Suggests: knitr, testthat, vdiffr (>= 0.3.0), svglite, rstan (>= 2.17.0), runjags, rjags, jagsUI, rstanarm (>= 2.18.2), emmeans, broom (>= 0.4.3), dotwhisker, MCMCglmm, bayesplot, modelr, brms (>= 2.9.0), cowplot, ggridges, covr, gdtools, rmarkdown, ggrepel, bindrcpp, RColorBrewer, gganimate, gifski, png, transformr
 # License: GPL (>= 3)
 # Language: en-US
 # BugReports: https://github.com/mjskay/tidybayes/issues/new
@@ -101,7 +97,7 @@ extra:
 # LazyData: true
 # Encoding: UTF-8
 # NeedsCompilation: no
-# Packaged: 2019-02-19 17:28:19 UTC; matth
+# Packaged: 2019-06-02 20:30:28 UTC; matth
 # Author: Matthew Kay [aut, cre], Timothy Mastny [ctb]
 # Repository: CRAN
-# Date/Publication: 2019-02-19 18:10:03 UTC
+# Date/Publication: 2019-06-02 21:10:03 UTC
