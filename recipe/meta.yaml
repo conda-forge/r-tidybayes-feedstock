@@ -1,4 +1,4 @@
-{% set version = "2.0.1" %}
+{% set version = "2.0.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidybayes_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidybayes/tidybayes_{{ version }}.tar.gz
-  sha256: 10fe9b5936ae9b79f5d90aac3b9740392f5188df4860d1414bcc9f698ecd86ec
+  sha256: 02e60fe2f3f11655459d9b3b6eb0688c2c7e96c6a5a46bd76ec296a3e3a68bc3
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -64,15 +64,12 @@ test:
 about:
   home: http://mjskay.github.io/tidybayes, https://github.com/mjskay/tidybayes
   license: GPL (>= 3)
-  summary: Compose data for and extract, manipulate, and visualize posterior draws from Bayesian
-    models ('JAGS', 'Stan', 'rstanarm', 'brms', 'MCMCglmm', 'coda', ...) in a tidy data
-    format. Functions are provided to help extract tidy data frames of draws from Bayesian
-    models and that generate point summaries and intervals in a tidy format. In addition,
-    'ggplot2' 'geoms' and 'stats' are provided for common visualization primitives like
-    points with multiple uncertainty intervals, eye plots (intervals plus densities),
-    and fit curves with multiple, arbitrary uncertainty bands.
+  summary: Compose data for and extract, manipulate, and visualize posterior draws from Bayesian models ('JAGS', 'Stan', 'rstanarm', 'brms', 'MCMCglmm', 'coda', ...)
+    in a tidy data format. Functions are provided to help extract tidy data frames of draws from Bayesian models and that generate point summaries and intervals in
+    a tidy format. In addition, 'ggplot2' 'geoms' and 'stats' are provided for common visualization primitives like points with multiple uncertainty intervals, eye
+    plots (intervals plus densities), and fit curves with multiple, arbitrary uncertainty bands.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
