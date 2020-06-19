@@ -1,4 +1,4 @@
-{% set version = "2.0.3" %}
+{% set version = "2.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidybayes_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidybayes/tidybayes_{{ version }}.tar.gz
-  sha256: 198a50042ae7257a997f6ddb0879e9fcdb88a166f8b0429bbad08205ea282f3f
+  sha256: 7178abd5b5b508f0f88542552978169ec7fa3bd684466af3315d30a18e83e773
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -64,10 +64,8 @@ test:
 about:
   home: http://mjskay.github.io/tidybayes, https://github.com/mjskay/tidybayes
   license: GPL (>= 3)
-  summary: Compose data for and extract, manipulate, and visualize posterior draws from Bayesian models ('JAGS', 'Stan', 'rstanarm', 'brms', 'MCMCglmm', 'coda', ...)
-    in a tidy data format. Functions are provided to help extract tidy data frames of draws from Bayesian models and that generate point summaries and intervals in
-    a tidy format. In addition, 'ggplot2' 'geoms' and 'stats' are provided for common visualization primitives like points with multiple uncertainty intervals, eye
-    plots (intervals plus densities), and fit curves with multiple, arbitrary uncertainty bands.
+  summary: Compose data for and extract, manipulate, and visualize posterior draws from Bayesian models ('JAGS', 'Stan', 'rstanarm', 'brms', 'MCMCglmm', 'coda', ...) in a tidy data format. Functions are provided to help extract tidy data frames of draws from Bayesian models and that generate point summaries and intervals
+    in a tidy format. In addition, 'ggplot2' 'geoms' and 'stats' are provided for common visualization primitives like points with multiple uncertainty intervals, eye plots (intervals plus densities), and fit curves with multiple, arbitrary uncertainty bands.
   license_family: GPL3
   license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
