@@ -3,13 +3,11 @@ About r-tidybayes
 
 Home: http://mjskay.github.io/tidybayes, https://github.com/mjskay/tidybayes
 
-Package license: GPL (>= 3)
+Package license: GPL-3.0-or-later
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tidybayes-feedstock/blob/master/LICENSE.txt)
 
 Summary: Compose data for and extract, manipulate, and visualize posterior draws from Bayesian models ('JAGS', 'Stan', 'rstanarm', 'brms', 'MCMCglmm', 'coda', ...) in a tidy data format. Functions are provided to help extract tidy data frames of draws from Bayesian models and that generate point summaries and intervals in a tidy format. In addition, 'ggplot2' 'geoms' and 'stats' are provided for common visualization primitives like points with multiple uncertainty intervals, eye plots (intervals plus densities), and fit curves with multiple, arbitrary uncertainty bands.
-
-
 
 Current build status
 ====================
