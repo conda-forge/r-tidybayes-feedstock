@@ -1,4 +1,4 @@
-{% set version = "3.0.1" %}
+{% set version = "3.0.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidybayes_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidybayes/tidybayes_{{ version }}.tar.gz
-  sha256: 55b7eaae4283b03f36439cc98cf01de96ce3802c0ab0241597a0779619962fb7
+  sha256: a2dd0ddbdaa8d169af0c14de09190cb90cb2d611a86a33a6261929f46017c700
 
 build:
   merge_build_host: true  # [win]
