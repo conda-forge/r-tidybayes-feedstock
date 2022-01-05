@@ -23,40 +23,37 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-ggdist >=2.1.0
-    - r-plyr
-    - r-dplyr >=0.8.0
-    - r-tidyr >=1.0.0
-    - r-ggplot2 >=3.3.0
-    - r-coda
-    - r-purrr >=0.2.3
-    - r-rlang >=0.3.0
-    - r-scales
-    - r-forcats
-    - r-hdinterval
     - r-arrayhelpers
-    - r-tidyselect
-    - r-tibble
+    - r-coda
+    - r-dplyr >=0.8.0
+    - r-ggdist >=3.0.0
+    - r-ggplot2 >=3.3.5
     - r-magrittr
+    - r-posterior >=1.0.1
+    - r-rlang >=0.3.0
+    - r-tibble
+    - r-tidyr >=1.0.0
+    - r-tidyselect
+    - r-vctrs
+    - r-withr
   run:
     - r-base
-    - r-ggdist >=2.1.0
-    - r-plyr
-    - r-dplyr >=0.8.0
-    - r-tidyr >=1.0.0
-    - r-ggplot2 >=3.3.0
-    - r-coda
-    - r-purrr >=0.2.3
-    - r-rlang >=0.3.0
-    - r-scales
-    - r-forcats
-    - r-hdinterval
     - r-arrayhelpers
-    - r-tidyselect
-    - r-tibble
+    - r-coda
+    - r-dplyr >=0.8.0
+    - r-ggdist >=3.0.0
+    - r-ggplot2 >=3.3.5
     - r-magrittr
+    - r-posterior >=1.0.1
+    - r-rlang >=0.3.0
+    - r-tibble
+    - r-tidyr >=1.0.0
+    - r-tidyselect
+    - r-vctrs
+    - r-withr
 
 test:
   commands:
