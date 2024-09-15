@@ -1,4 +1,4 @@
-{% set version = "3.0.6" %}
+{% set version = "3.0.7" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidybayes_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidybayes/tidybayes_{{ version }}.tar.gz
-  sha256: 706044e17855a684a5ad1aeb582963dd3c7192a4a8ad0584358d0ea7c7aadb90
+  sha256: 1ccc481a430547f0134d32595d59c252a9469a2202cc5300306aa3bb4708290a
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
